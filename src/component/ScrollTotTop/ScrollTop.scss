@@ -1,0 +1,21 @@
+.scroll-top{
+    position: fixed;
+    background-color: white;
+    display: none;
+    color: black;
+    right: 10px;
+    bottom: 20px;
+    padding: 20px;
+    cursor: pointer;
+    
+    &:hover{
+        background-color: chartreuse;
+        transform: scale(1.1);
+        transition: 0.3s;
+        color: white;
+    }
+    
+}
+.block.scroll-top {
+    display: block;
+}

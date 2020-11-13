@@ -1,0 +1,28 @@
+.education-container {
+    margin: 0;
+  background-color: black;
+  padding: 0 20px;
+  color: white;
+  height: 50vh;
+  z-index: 1;
+  .education {
+    color: #6c757d !important;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .time {
+      margin: 40px 0;
+    margin-right: 200px;
+    color: #42a5f5 !important;
+  }
+  .name{
+      font-size: 30px;
+  }
+}
+.h1 {
+  font-weight: bold;
+  font-size: 60px;
+  color: #6c757d !important;
+}

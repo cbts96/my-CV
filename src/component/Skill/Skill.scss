@@ -1,0 +1,25 @@
+.skill-container{
+    height: 80vh;
+    background-color: black;
+    color: white;
+    padding: 0 20px;
+    .tech-title{
+        margin: 49px 0;
+    }
+    .tech-skill{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-size: 180px;
+        
+       .fab{
+           padding-right:20px ;
+        &:hover{
+            color: #2f6fe1;
+            transition: 0.3s;
+            transform: scale(1.1);
+        }
+       }
+    }
+}

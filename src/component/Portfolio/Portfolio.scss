@@ -1,0 +1,10 @@
+.portfolio-container{
+    height: 50vh;
+    background-color: black;
+    color: white;
+    padding: 0 20px;
+    .fa-cog{
+        -webkit-animation: fa-spin 2s linear infinite;
+        animation: fa-spin 2s linear infinite;
+    }
+}

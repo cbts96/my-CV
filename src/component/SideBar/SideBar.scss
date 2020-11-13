@@ -1,0 +1,11 @@
+.side-bar{
+    height: 100vh;
+    position: fixed;
+    width: 22%;
+    background-color: #243447 !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
