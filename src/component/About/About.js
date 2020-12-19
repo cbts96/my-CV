@@ -1,10 +1,17 @@
 import React from "react";
 import "./About.scss";
 import Button from "../Button/Button";
+import {motion} from "framer-motion";
 const About = () => {
   return (
-      <>
-    <div className="about-container">
+      <motion.div initial={{ scale: 0 }}
+      animate={{ rotate: 360, scale: 1 }}
+      transition={{
+        type: "spring",
+        stiffness: 260,
+        damping: 20
+      }}>
+    <div className="about-container" >
         
       <span className="about">
         <div className="container-about name">
@@ -13,8 +20,8 @@ const About = () => {
       </span>
       <span className="about">
         <div className="container-about">
-          <i className="fas fa-address-book"></i>Xã Bình Ninh, Huyện Chợ Gạo, Tỉnh Tiền
-          Giang, Việt Nam
+          <i className="fas fa-address-book"></i> Bình Ninh Commune, Chợ Gạo District, Tiền
+          Giang Province, Việt Nam
         </div>
       </span>
       <span className="about">
@@ -51,11 +58,20 @@ const About = () => {
       </span>
       <span className="quote">PRACTICE MAKE PERFECT !</span>
       <span className="quote-name">- Somebody famous</span>
+      <Button/>
     </div>
+    </motion.div>
     
-    <Button/>
-    </>
+    
   );
 };
 
 export default About;
+
+
+
+
+
+
+
+ 

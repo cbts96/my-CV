@@ -1,15 +1,16 @@
 import React from 'react';
 import "./SidebarContent.scss";
+import {Link} from "react-scroll";
 
 const SidebarContent = () => {
     return (
         <div className="sidebar-content">
-            <div className="item">About</div>
-            <div className="item">Education</div>
-            <div className="item">Skills</div>
-            <div className="item">Portfolios</div>
-            <div className="item">Contact</div>
-            <div className="item">Certificate</div>
+            <Link className="item" to="about" duration={1000} smooth={true}>About</Link>
+            <Link className="item" to="education" duration={1000} smooth={true} >Education</Link>
+            <Link className="item" to="skills" duration={1000} smooth={true} >Skills</Link>
+            <Link className="item" to="portfolios" duration={1000} smooth={true} >Portfolios</Link>
+            <Link className="item" to="hobbies" duration={1000} smooth={true}>Hobbies</Link>
+            <Link className="item" to="certificate" duration={1000} smooth={true}>Certificate</Link>
             
         </div>
     )

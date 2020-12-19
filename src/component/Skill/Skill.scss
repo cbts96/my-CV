@@ -3,18 +3,35 @@
     background-color: black;
     color: white;
     padding: 0 20px;
+    
+    @media (max-width: 375px) {
+        margin: 20px 0 ;
+
+    }
     .tech-title{
         margin: 49px 0;
     }
     .tech-skill{
-        width: 80%;
+        width: 90%;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         font-size: 180px;
+        @media (max-width: 1050px) {
+            font-size: 100px;
+
+        }
         
        .fab{
            padding-right:20px ;
+           @media (max-width: 650px) {
+               padding: 10px;
+           }
+           @media (max-width: 375px) {
+    
+            font-size: 50px;
+            
+          }
         &:hover{
             color: #2f6fe1;
             transition: 0.3s;

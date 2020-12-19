@@ -3,26 +3,41 @@
   background-color: black;
   padding: 0 20px;
   color: white;
-  height: 50vh;
+  height: 60vh;
   z-index: 1;
   .education {
     color: #6c757d !important;
+    // margin: 20px 0;
   }
   .content {
-    display: flex;
-    justify-content: space-between;
+    margin-bottom:120px;;
+    .name{
+      font-size: 30px;
+      display: flex;
+      justify-content: space-between;
+  }
+  .choose{
+    margin-top: 10px;
+    font-style: italic;
+  }
   }
   .time {
-      margin: 40px 0;
-    margin-right: 200px;
+  //     margin: 40px 0;
+  //   margin-right: 200px;
     color: #42a5f5 !important;
   }
-  .name{
-      font-size: 30px;
-  }
+ 
 }
 .h1 {
   font-weight: bold;
   font-size: 60px;
   color: #6c757d !important;
+  // @media (max-width: 650px) {
+  //   padding-top: 130px;
+  // }
+  @media (max-width: 375px) {
+    
+    font-size: 20px;
+    margin-top: 10px;
+  }
 }

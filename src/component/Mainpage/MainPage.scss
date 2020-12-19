@@ -1,7 +1,17 @@
-.main-page{
-    width: 78%;
-    background-color: black;
-    position: absolute;
-    right: 0;
-    height: 100%;
+.main-page {
+  width: 78%;
+  background-color: black;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  border-bottom: 1px dotted gray;
+  @media (max-width: 650px) {
+    // margin-left: -20px;
+    width: 100%;
+  }
+  @media (max-width: 375px) {
+    // margin-left: -20px;
+    width: 100vw;
+    position: unset;
+  }
 }

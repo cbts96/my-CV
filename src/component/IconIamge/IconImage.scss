@@ -1,17 +1,40 @@
-.icon-img{
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    background-position: center;
-    background-size: cover;
-    
-    background-color: #302244;
-  border: 10px solid gray;
-  border-image: linear-gradient(#b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
-  border-image-slice: 1;
-  height: 200px;
-  margin: 20px auto;
-  width: 200px;
-    
+.shape-outer {
+  display: flex;
+  flex-shrink: 0;
+  height: calc(150px + 4vw);
+  width: calc(150px + 4vw);
+  margin: 25px;
+  background-image: linear-gradient(to bottom right, #ff3cac, #562b7c, #2b86c5);
 }
 
+.shape-inner {	
+  height: calc(130px + 4vw);
+  width: calc(130px + 4vw);
+  
+  background-size: cover;
+  margin: auto;
+ 
+  
+}
+
+  .circle {
+    -webkit-clip-path: circle(50% at 50% 50%);
+    		clip-path: circle(50% at 50% 50%);
+}
+
+
+
+.shape-inner.circle.open{
+  @media (max-width: 650px) {
+    position: absolute;
+    top: 16px;
+    right: 404px;
+    z-index: 111111;
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 40%;
+    width: 20px;
+    height: 23px;
+ }
+}
