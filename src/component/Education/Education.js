@@ -24,7 +24,7 @@ const Education = () => {
           <span>Udemy </span> <span className="time">2019-Forever</span>
           
         </div>
-        <div className="choose">- Seft-taught Learning</div>
+        <div className="choose">- Seft-Study Learning</div>
       </div>
     </div>
     </motion.div>

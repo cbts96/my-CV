@@ -56,7 +56,7 @@ const About = () => {
           </a>
         </div>
       </span>
-      <span className="quote">PRACTICE MAKE PERFECT !</span>
+      <span className="quote">PRACTICE MAKES PERFECT !</span>
       <span className="quote-name">- Somebody famous</span>
       <Button/>
     </div>
