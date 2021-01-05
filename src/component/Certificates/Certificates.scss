@@ -1,10 +1,12 @@
 .certificate-container{
-    color: whitesmoke;
+    color: white;
     background-color: black;
     display: flex;
     flex-direction: column;
     padding: 100px 20px;
-    margin-bottom: -1px;
+    // margin-bottom: -1px;
+    margin-top: -3px;
+    
     li{
         padding: 10px 0;
         text-decoration: none;

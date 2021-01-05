@@ -15,7 +15,7 @@ const ScrollTop = () => {
     <Fragment>
       
       <div
-        className={`${scrollTop > 200 ? "block" : "none"} scroll-top`}
+        className={`${scrollTop > 100 ? "block" : "none"} scroll-top`}
         onClick={handleClick}
       >
         <i className="fa fa-chevron-up" aria-hidden="true"></i>
