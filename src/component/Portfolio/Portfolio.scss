@@ -4,7 +4,7 @@
   margin-top: 20px;
   cursor: pointer;
   @media (max-width: 1750px) {
-    max-width: 344px !important;
+    max-width: 444px !important;
     margin-top: 20px;
     cursor: pointer;
     padding: 16px;
@@ -59,6 +59,10 @@
       margin-left: 10px;
       @media (max-width: 690px) {
         width: 70%;
+        text-align: center;
+      }
+      @media (max-width: 1400px) {
+        width: 100%;
         text-align: center;
       }
       @media (max-width: 375px) {
