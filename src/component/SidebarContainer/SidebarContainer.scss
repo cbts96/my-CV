@@ -6,6 +6,7 @@
   align-items: center;
   flex-direction: column;
   transition: .6s;
+ 
   @media (max-width: 650px) {
     display: flex;
     z-index: 100;
