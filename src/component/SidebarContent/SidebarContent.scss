@@ -1,13 +1,16 @@
 .sidebar-content {
   display: flex;
   flex-direction: column;
-  @media (max-width: 400px) {
-    padding-top: 10px;
-    margin-left: 0px;
-    margin-top: 174px;
-  }
+  // @media (max-width: 400px) {
+  //   padding-top: 10px;
+  //   margin-left: 0px;
+  //   margin-top: 174px;
+  // }
   @media (max-width: 650px) {
-    margin-top: 180px;
+    
+    width: 100vw;
+
+    background-color: #243447 !important;
   }
   .item:nth-child(1) {
     margin-top: 10px;
@@ -34,9 +37,5 @@
       margin: 5px 0;
     }
   }
-  @media (max-width: 650px) {
-    width: 100vw;
-
-    background-color: #243447 !important;
-  }
+  
 }

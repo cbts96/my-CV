@@ -8,15 +8,13 @@
   transition: .6s;
  
   @media (max-width: 650px) {
-    display: flex;
+    
     z-index: 100;
-    flex-direction: column;
-    align-items: center;
+        
     position: fixed;
-    height: 10vh;
+    
     width: 100%;
-    top: 0;
-    left: 0;
+    
     font-size: 20px;
 
     &.close {
@@ -25,6 +23,13 @@
         top: -1000px;
         right: -1000px;
         
+      }
+    }
+    &.open {
+      @media (max-width: 650px) {
+       margin: 0;
+       top: -53%;
+       left: 0;
       }
     }
   }
