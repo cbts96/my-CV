@@ -125,14 +125,14 @@ const Portfolio = () => {
           <div className="p name">Basic-Chat-App - Nodejs</div>
           <div className="git">
           &#128073;<a
-              href="https://github.com/cbts96/Basic-chat-app-v1"
+              href=""
               className="blue"
             >
               Github
             </a>{" "}
             -
             <a
-              href="https://basic-chat-app-by-lethang.netlify.app/"
+              href=""
               className="blue"
             >
               {" "}
