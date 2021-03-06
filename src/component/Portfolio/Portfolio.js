@@ -81,7 +81,7 @@ const Portfolio = () => {
             </a>{" "}
             -
             <a
-              href="https://comfy-house-shopping-cart-js-lethang.netlify.com/"
+              href="https://comfy-store-lethang.netlify.app/"
               className="blue"
             >
               {" "}
