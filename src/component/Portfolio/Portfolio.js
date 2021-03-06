@@ -71,7 +71,7 @@ const Portfolio = () => {
         </div>
 
         <div className="portfolio">
-          <div className="p name">Comfy-House - Javascript</div>
+          <div className="p name">Comfy-Store - Javascript</div>
           <div className="git">
           &#128073; <a
               href="https://github.com/cbts96/Comfy-house-cart-js"
