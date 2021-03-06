@@ -74,7 +74,7 @@ const Portfolio = () => {
           <div className="p name">Comfy-Store - Javascript</div>
           <div className="git">
           &#128073; <a
-              href="https://github.com/cbts96/Comfy-house-cart-js"
+              href="https://github.com/cbts96/Comfy-Store"
               className="blue"
             >
               Github
