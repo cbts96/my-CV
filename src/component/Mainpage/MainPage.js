@@ -8,7 +8,7 @@ import End from "../End/End";
 import Portfolio from "../Portfolio/Portfolio";
 import ScrollTop from "../ScrollTotTop/ScrollTop";
 import Skill from "../Skill/Skill";
-
+import Ex from "../Experience/Ex";
 import "./MainPage.scss";
 const MainPage = () => {
 
@@ -17,6 +17,7 @@ const MainPage = () => {
       <ScrollTop />
       <About  />
       <Education />
+      <Ex />
       <Skill />
       <Portfolio />
       <Contact />
