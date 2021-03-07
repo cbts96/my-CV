@@ -6,6 +6,7 @@ import a3 from "../../images/a3.png";
 import a4 from "../../images/a4.png";
 import a5 from "../../images/a5.png";
 import a6 from "../../images/a6.png";
+import a7 from "../../images/a7.png";
 import ReactFancyBox from 'react-fancybox'
 import 'react-fancybox/lib/fancybox.css'
 import {motion} from "framer-motion";
@@ -96,6 +97,33 @@ const Portfolio = () => {
          
          thumbnail={a3}
          image={a3}/>
+        </div>
+        <div className="portfolio">
+          <div className="p name">GreenSock Animation - Javascript</div>
+          <div className="git">
+          &#128073; <a
+              href="https://github.com/cbts96/GreenSock-Ex"
+              className="blue"
+            >
+              Github
+            </a>{" "}
+            -
+            <a
+              href="https://greensock-ex-by-lethang.netlify.app/"
+              className="blue"
+            >
+              {" "}
+              Live Demo
+            </a>
+          </div>
+          <div className="tech-use">
+            <i className="fas fa-cog"></i>
+            <span>Technologies: Html, Css, Javascript....</span>
+          </div>
+          <ReactFancyBox
+         
+         thumbnail={a7}
+         image={a7}/>
         </div>
         <div className="portfolio">
           <div className="p name">Natour - NodeJS</div>
