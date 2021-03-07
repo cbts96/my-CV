@@ -153,7 +153,7 @@ const Portfolio = () => {
           <div className="p name">Basic-Chat-App - Nodejs</div>
           <div className="git">
           &#128073;<a
-              href=""
+              href="https://basic-chat-app-by-lethang.netlify.app/"
               className="blue"
             >
               Github
