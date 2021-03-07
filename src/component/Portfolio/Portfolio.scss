@@ -33,6 +33,7 @@
  }
   .portfolio-title{
     padding-left: 10px;
+    padding-bottom: 25px;
   }
   // margin-top: 130px!important;
   
@@ -61,11 +62,12 @@
     .portfolio {
       height: 20%;
       width: 100%;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
       display: flex;
       flex: 1;
       flex-direction: column;
       margin-left: 10px;
+      margin-top: 20px;
       @media (max-width: 690px) {
         width: 70%;
         text-align: center;
