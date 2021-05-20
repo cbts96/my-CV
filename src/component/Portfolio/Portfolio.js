@@ -7,6 +7,8 @@ import a4 from "../../images/a4.png";
 import a5 from "../../images/a5.png";
 import a6 from "../../images/a6.png";
 import a7 from "../../images/a7.png";
+import a8 from "../../images/a8.png";
+import a9 from "../../images/a9.png";
 import ReactFancyBox from 'react-fancybox'
 import 'react-fancybox/lib/fancybox.css'
 import {motion} from "framer-motion";
@@ -21,7 +23,8 @@ const Portfolio = () => {
     }}>
     <div className="portfolio-container portfolios">
       <div className="portfolio-title h1">PORTFOLIO</div>
-      <div className=" grid-port portfolio-list">
+      <div style={{marginLeft:"15px"}} className="role">PERSONAL PROJECT: </div>
+      <div className="grid-port portfolio-list">
         <div className="portfolio">
           <div className="p name">Crown-Clothing - Reactjs</div>
           <div className="git">
@@ -199,8 +202,56 @@ const Portfolio = () => {
          
           thumbnail={a6}
           image={a6}/>
-        </div>
+          </div>
+          
+          
+          
+          </div>
+          <div style={{marginLeft:"15px"}} className="role">COMPANY PROJECTS (Team work) :</div>
+          <div className="grid-port portfolio-list">
+          <div className="portfolio">
+          <div className="p name" style={{margin:"10px 0px"}}>POD (MEDICAL ROBOT)</div>
+          <div className="size">&#128073;
+              Github
+            
+            -
+            
+              Live Demo
+             (Not Available) </div>
+          <div className="tech-use">
+            <i className="fas fa-cog"></i>
+            <span>Technologies: Reactjs, Scss, Ant design, Typescript ....</span>
+          </div>
+          <ReactFancyBox
+         
+          thumbnail={a8}
+          image={a8}/>
+          </div>
+          
+
+          <div className="portfolio">
+          <div className="p name"style={{margin:"10px 0px"}}>MTC (Music + Video Data Record)</div>
+          <div className="size">&#128073;
+              Github
+            
+            -
+            
+              Live Demo
+             (Not Available) </div>
+          
+          <div className="tech-use">
+            <i className="fas fa-cog"></i>
+            <span>Technologies: Reactjs, Scss, Ant design, Typescript...</span>
+          </div>
+          <ReactFancyBox
+         
+          thumbnail={a9}
+          image={a9}/>
+          
       </div>
+    
+    </div>
+    
     </div>
     </motion.div>
   );
