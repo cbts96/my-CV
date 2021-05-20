@@ -21,10 +21,17 @@ const Education = () => {
       
       <div className="content">
         <div className="name">
-          <span>EGANY-TECH </span> <span className="time">2021</span>
+          <span>EGANY-TECH </span> <span className="time">2020</span>
           
         </div>
         <div className="choose">- Front-end (Shoplify Platform)</div>
+      </div>
+      <div className="content">
+        <div className="name">
+          <span>ALTA SOFTWARE </span> <span className="time">2021</span>
+          
+        </div>
+        <div className="choose">- Front-end Developer</div>
       </div>
     </div>
     </motion.div>
