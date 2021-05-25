@@ -33,7 +33,7 @@ const SideBar = ({showButton}) => {
       user={{
         background: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxCEvFAEe3ziBvRL7ID-IijbniFupiKJS_nA&usqp=CAU',
         email: 'lexuanthang123@gmail.com',
-        image: 'https://lethang-cv.netlify.app/static/media/C360.33af3a94.jpg',
+        image: '../../assets/C360.jpg',
         name: 'Lê Xuân Thắng'
       }}
       userView
