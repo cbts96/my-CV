@@ -1,259 +1,533 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Portfolio.scss";
-import a1 from "../../images/a1.png";
-import a2 from "../../images/a2.png";
-import a3 from "../../images/a3.png";
-import a4 from "../../images/a4.png";
-import a5 from "../../images/a5.png";
-import a6 from "../../images/a6.png";
-import a7 from "../../images/a7.png";
-import a8 from "../../images/a8.png";
-import a9 from "../../images/a9.png";
-import ReactFancyBox from 'react-fancybox'
-import 'react-fancybox/lib/fancybox.css'
-import {motion} from "framer-motion";
+import a1 from "../../assets/a1.png";
+import a2 from "../../assets/a2.png";
+import a3 from "../../assets/a3.png";
+import a4 from "../../assets/a4.png";
+import a5 from "../../assets/a5.png";
+import a6 from "../../assets/a6.png";
+import a7 from "../../assets/a7.png";
+import a8 from "../../assets/a8.png";
+import a9 from "../../assets/a9.png";
+// import ReactFancyBox from "react-fancybox";
+// import "react-fancybox/lib/fancybox.css";
+import { motion } from "framer-motion";
+import { Modal} from 'react-materialize';
+// import Lightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css";
 const Portfolio = () => {
+  const [ setImageToShow] = useState("");
+  const [setLightBoxDisplay] = useState(false);
+  const images = [a1, a2, a3, a4, a5, a6, a7, a8, a9];
+  
+  //define
+  const imageCards = images.map((image) => (
+    
+    <img key={image} alt="img" className="img-portfolio" onClick={() => showImage(image)} src={image} />
+  ));
+  
+   
+
+  //function to show a specific image in the lightbox, amd make lightbox visible
+  const showImage = (image) => {
+    setImageToShow(image);
+    setLightBoxDisplay(true);
+  };
+
+  //hide lightbox
+  //show next image in lightbox
+  // const showNext = (e) => {
+  //   e.stopPropagation();
+  //   let currentIndex = images.indexOf(imageToShow);
+  //   if (currentIndex >= images.length - 1) {
+  //     setLightBoxDisplay(false);
+  //   } else {
+  //     let nextImage = images[currentIndex + 1];
+  //     setImageToShow(nextImage);
+  //   }
+  // };
+
+  //show previous image in lightbox
+  // const showPrev = (e) => {
+  //   e.stopPropagation();
+  //   let currentIndex = images.indexOf(imageToShow);
+  //   if (currentIndex <= 0) {
+  //     setLightBoxDisplay(false);
+  //   } else {
+  //     let nextImage = images[currentIndex - 1];
+  //     setImageToShow(nextImage);
+  //   }
+  // };
+
+  
   return (
-    <motion.div initial={{ scale: 0 }}
-    animate={{ rotate: 360, scale: 1 }}
-    transition={{
-      type: "spring",
-      stiffness: 260,
-      damping: 20
-    }}>
-    <div className="portfolio-container portfolios">
-      <div className="portfolio-title h1">PORTFOLIO</div>
-      <div style={{marginLeft:"15px"}} className="role">PERSONAL PROJECT: </div>
-      <div className="grid-port portfolio-list">
-        <div className="portfolio">
-          <div className="p name">Crown-Clothing - Reactjs</div>
-          <div className="git">
-          &#128073;<a href="https://github.com/cbts96/Crown-Clothing" className="blue">
-              Github
-            </a>{" "}
-            -
-            <a href="https://crown-clothing-v3.herokuapp.com/" className="blue">
-              {" "}
-              Live Demo
-            </a>
-          </div>
-          <div className="tech-use">
-            <i className="fas fa-cog"></i>
-            <span>Technologies: React, Redux, Firebase, Sagas....</span>
-          </div>
-          <ReactFancyBox
-         
-          thumbnail={a1}
-          image={a1}/>
+    <motion.div
+      initial={{ scale: 0 }}
+      animate={{ rotate: 360, scale: 1 }}
+      transition={{
+        type: "spring",
+        stiffness: 260,
+        damping: 20,
+      }}
+    >
+      <div className="portfolio-container portfolios">
+        <div className="portfolio-title h1">PORTFOLIO</div>
+        <div style={{ marginLeft: "15px" }} className="role">
+          PERSONAL PROJECT:{" "}
         </div>
-        <div className="portfolio">
-          <div className="p name">Natour - CSS</div>
-          <div className="git">
-          &#128073;<a
-              href="https://github.com/cbts96/natour-html-css"
-              className="blue"
-            >
-              Github
-            </a>{" "}
-            -
-            <a
-              href="https://natour-html-css-by-lethang.netlify.app/"
-              className="blue"
-            >
-              {" "}
-              Live Demo
-            </a>
-          </div>
-          <div className="tech-use">
-            <i className="fas fa-cog"></i>
-            <span>Technologies: Html, Css, Javascript....</span>
-          </div>
-          <ReactFancyBox
-         
-          thumbnail={a2}
-          image={a2}/>
-        </div>
-
-        <div className="portfolio">
-          <div className="p name">Comfy-Store - Javascript</div>
-          <div className="git">
-          &#128073; <a
-              href="https://github.com/cbts96/Comfy-Store"
-              className="blue"
-            >
-              Github
-            </a>{" "}
-            -
-            <a
-              href="https://comfy-store-lethang.netlify.app/"
-              className="blue"
-            >
-              {" "}
-              Live Demo
-            </a>
-          </div>
-          <div className="tech-use">
-            <i className="fas fa-cog"></i>
-            <span>Technologies: Html, Css, Javascript....</span>
-          </div>
-          <ReactFancyBox
-         
-         thumbnail={a3}
-         image={a3}/>
-        </div>
-        <div className="portfolio">
-          <div className="p name">GreenSock Animation - Javascript</div>
-          <div className="git">
-          &#128073; <a
-              href="https://github.com/cbts96/GreenSock-Ex"
-              className="blue"
-            >
-              Github
-            </a>{" "}
-            -
-            <a
-              href="https://greensock-ex-by-lethang.netlify.app/"
-              className="blue"
-            >
-              {" "}
-              Live Demo
-            </a>
-          </div>
-          <div className="tech-use">
-            <i className="fas fa-cog"></i>
-            <span>Technologies: Html, Css, Javascript....</span>
-          </div>
-          <ReactFancyBox
-         
-         thumbnail={a7}
-         image={a7}/>
-        </div>
-        <div className="portfolio">
-          <div className="p name">Natour - NodeJS</div>
-          <div className="git">
-          &#128073;<a
-              href="https://github.com/cbts96/Natour-latsted"
-              className="blue"
-            >
-              Github
-            </a>{" "}
-            -
-            <a href="https://natour-lethang.herokuapp.com/" className="blue">
-              {" "}
-              Live Demo
-            </a>
-          </div>
-          <div className="tech-use">
-            <i className="fas fa-cog"></i>
-            <span>Technologies: Nodejs, MongoDB, Express,.....</span>
-          </div>
-          <ReactFancyBox
-         
-          thumbnail={a4}
-          image={a4}/>
-        </div>
-        <div className="portfolio">
-          <div className="p name">Basic-Chat-App - Nodejs</div>
-          <div className="git">
-          &#128073;<a
-              href="https://basic-chat-app-by-lethang.netlify.app/"
-              className="blue"
-            >
-              Github
-            </a>{" "}
-            -
-            <a
-              href=""
-              className="blue"
-            >
-              {" "}
-              Live Demo
-            </a>
-          </div>
-          <div className="tech-use">
-            <i className="fas fa-cog"></i>
-            <span>Technologies: Nodejs, ReactJS, Socket IO....</span>
-          </div>
-          <ReactFancyBox
-         
-          thumbnail={a5}
-          image={a5}/>
-        </div>
-        <div className="portfolio">
-          <div className="p name">Todo-List - Reactjs</div>
-          <div className="git">
-          &#128073;<a href="https://github.com/cbts96/TodolistReact" className="blue">
-              Github
-            </a>{" "}
-            -
-            <a
-              href="https://todolist-react-lethang.netlify.app/"
-              className="blue"
-            >
-              {" "}
-              Live Demo
-            </a>
-          </div>
-          <div className="tech-use">
-            <i className="fas fa-cog"></i>
-            <span>Technologies: Html, Css, Javascript....</span>
-          </div>
-          <ReactFancyBox
-         
-          thumbnail={a6}
-          image={a6}/>
-          </div>
-          
-          
-          
-          </div>
-          <div style={{marginLeft:"15px"}} className="role">COMPANY PROJECTS (Team work) :</div>
-          <div className="grid-port portfolio-list">
+        <div className="grid-port portfolio-list">
           <div className="portfolio">
-          <div className="p name" style={{margin:"10px 0px"}}>POD (MEDICAL ROBOT)</div>
-          <div className="size">&#128073;
-              Github
+            <div className="p name">Crown-Clothing - Reactjs</div>
+            <div className="git">
+              &#128073;
+              <a
+                href="https://github.com/cbts96/Crown-Clothing"
+                className="git-blue"
+              >
+                Github
+              </a>{" "}
+              -
+              <a
+                href="https://crown-clothing-v3.herokuapp.com/"
+                className="git-blue"
+              >
+                {" "}
+                Live Demo
+              </a>
+            </div>
+            <div className="tech-use">
+              <i className="fas fa-cog"></i>
+              <span>Technologies: React, Redux, Firebase, Sagas....</span>
+            </div>
+            <Modal
+  
+
+  
+  id="Modal-0"
+  open={false}
+  options={{
+    dismissible: true,
+    endingTop: '10%',
+    inDuration: 250,
+    onCloseEnd: null,
+    onCloseStart: null,
+    onOpenEnd: null,
+    onOpenStart: null,
+    opacity: 0.5,
+    outDuration: 250,
+    preventScrolling: true,
+    startingTop: '4%'
+  }}
+  
+  trigger={imageCards[0]}
+>
+  
+{imageCards[0]}
+
+</Modal>
+
+
+    
+
+
+
             
-            -
+          </div>
+          <div className="portfolio">
+            <div className="p name">Natour - CSS</div>
+            <div className="git">
+              &#128073;
+              <a
+                href="https://github.com/cbts96/natour-html-css"
+                className="git-blue"
+              >
+                Github
+              </a>{" "}
+              -
+              <a
+                href="https://natour-html-css-by-lethang.netlify.app/"
+                className="git-blue"
+              >
+                {" "}
+                Live Demo
+              </a>
+            </div>
+            <div className="tech-use">
+              <i className="fas fa-cog"></i>
+              <span>Technologies: Html, Css, Javascript....</span>
+            </div>
             
-              Live Demo
-             (Not Available) </div>
-          <div className="tech-use">
-            <i className="fas fa-cog"></i>
-            <span>Technologies: Reactjs, Scss, Ant design, Typescript ....</span>
+            <Modal
+  
+
+  
+  id="Modal-0"
+  open={false}
+  options={{
+    dismissible: true,
+    endingTop: '10%',
+    inDuration: 250,
+    onCloseEnd: null,
+    onCloseStart: null,
+    onOpenEnd: null,
+    onOpenStart: null,
+    opacity: 0.5,
+    outDuration: 250,
+    preventScrolling: true,
+    startingTop: '4%'
+  }}
+  
+  trigger={imageCards[1]}
+>
+  
+{imageCards[1]}
+
+</Modal>
+            
           </div>
-          <ReactFancyBox
-         
-          thumbnail={a8}
-          image={a8}/>
-          </div>
-          
 
           <div className="portfolio">
-          <div className="p name"style={{margin:"10px 0px"}}>MTC (Music + Video Data Record)</div>
-          <div className="size">&#128073;
-              Github
+            <div className="p name">Comfy-Store - Javascript</div>
+            <div className="git">
+              &#128073;{" "}
+              <a
+                href="https://github.com/cbts96/Comfy-Store"
+                className="git-blue"
+              >
+                Github
+              </a>{" "}
+              -
+              <a
+                href="https://comfy-store-lethang.netlify.app/"
+                className="git-blue"
+              >
+                {" "}
+                Live Demo
+              </a>
+            </div>
+            <div className="tech-use">
+              <i className="fas fa-cog"></i>
+              <span>Technologies: Html, Css, Javascript....</span>
+            </div>
+            <Modal
+  
+
+  
+  id="Modal-0"
+  open={false}
+  options={{
+    dismissible: true,
+    endingTop: '10%',
+    inDuration: 250,
+    onCloseEnd: null,
+    onCloseStart: null,
+    onOpenEnd: null,
+    onOpenStart: null,
+    opacity: 0.5,
+    outDuration: 250,
+    preventScrolling: true,
+    startingTop: '4%'
+  }}
+  
+  trigger={imageCards[2]}
+>
+  
+{imageCards[2]}
+
+</Modal>
             
-            -
-            
-              Live Demo
-             (Not Available) </div>
-          
-          <div className="tech-use">
-            <i className="fas fa-cog"></i>
-            <span>Technologies: Reactjs, Scss, Ant design, Typescript...</span>
           </div>
-          <ReactFancyBox
-         
-          thumbnail={a9}
-          image={a9}/>
+          <div className="portfolio">
+            <div className="p name">GreenSock Animation - Javascript</div>
+            <div className="git">
+              &#128073;{" "}
+              <a
+                href="https://github.com/cbts96/GreenSock-Ex"
+                className="git-blue"
+              >
+                Github
+              </a>{" "}
+              -
+              <a
+                href="https://greensock-ex-by-lethang.netlify.app/"
+                className="git-blue"
+              >
+                {" "}
+                Live Demo
+              </a>
+            </div>
+            <div className="tech-use">
+              <i className="fas fa-cog"></i>
+              <span>Technologies: Html, Css, Javascript....</span>
+            </div>
+            <Modal
+  
+
+  
+  id="Modal-0"
+  open={false}
+  options={{
+    dismissible: true,
+    endingTop: '10%',
+    inDuration: 250,
+    onCloseEnd: null,
+    onCloseStart: null,
+    onOpenEnd: null,
+    onOpenStart: null,
+    opacity: 0.5,
+    outDuration: 250,
+    preventScrolling: true,
+    startingTop: '4%'
+  }}
+  
+  trigger={imageCards[6]}
+>
+  
+{imageCards[6]}
+
+</Modal>
+          </div>
+          <div className="portfolio">
+            <div className="p name">Natour - NodeJS</div>
+            <div className="git">
+              &#128073;
+              <a
+                href="https://github.com/cbts96/Natour-latsted"
+                className="git-blue"
+              >
+                Github
+              </a>{" "}
+              -
+              <a
+                href="https://natour-lethang.herokuapp.com/"
+                className="git-blue"
+              >
+                {" "}
+                Live Demo
+              </a>
+            </div>
+            <div className="tech-use">
+              <i className="fas fa-cog"></i>
+              <span>Technologies: Nodejs, MongoDB, Express,.....</span>
+            </div>
+            <Modal
+  
+
+  
+  id="Modal-0"
+  open={false}
+  options={{
+    dismissible: true,
+    endingTop: '10%',
+    inDuration: 250,
+    onCloseEnd: null,
+    onCloseStart: null,
+    onOpenEnd: null,
+    onOpenStart: null,
+    opacity: 0.5,
+    outDuration: 250,
+    preventScrolling: true,
+    startingTop: '4%'
+  }}
+  
+  trigger={imageCards[3]}
+>
+  
+{imageCards[3]}
+
+</Modal>
+            
+          </div>
+          <div className="portfolio">
+            <div className="p name">Basic-Chat-App - Nodejs</div>
+            <div className="git">
+              &#128073;
+              <a href="#1" className="git-blue">
+                Github
+              </a>{" "}
+              -
+              <a href="#1" className="git-blue">
+                {" "}
+                Live Demo
+              </a>
+            </div>
+            <div className="tech-use">
+              <i className="fas fa-cog"></i>
+              <span>Technologies: Nodejs, ReactJS, Socket IO....</span>
+            </div>
+            <Modal
+  
+
+  
+  id="Modal-0"
+  open={false}
+  options={{
+    dismissible: true,
+    endingTop: '10%',
+    inDuration: 250,
+    onCloseEnd: null,
+    onCloseStart: null,
+    onOpenEnd: null,
+    onOpenStart: null,
+    opacity: 0.5,
+    outDuration: 250,
+    preventScrolling: true,
+    startingTop: '4%'
+  }}
+  
+  trigger={imageCards[4]}
+>
+  
+{imageCards[4]}
+
+</Modal>
           
+          </div>
+          <div className="portfolio">
+            <div className="p name">Todo-List - Reactjs</div>
+            <div className="git">
+              &#128073;
+              <a
+                href="https://github.com/cbts96/TodolistReact"
+                className="git-blue"
+              >
+                Github
+              </a>{" "}
+              -
+              <a
+                href="https://todolist-react-lethang.netlify.app/"
+                className="git-blue"
+              >
+                {" "}
+                Live Demo
+              </a>
+            </div>
+            <div className="tech-use">
+              <i className="fas fa-cog"></i>
+              <span>Technologies: Html, Css, Javascript....</span>
+            </div>
+            <Modal
+  
+
+  
+  id="Modal-0"
+  open={false}
+  options={{
+    dismissible: true,
+    endingTop: '10%',
+    inDuration: 250,
+    onCloseEnd: null,
+    onCloseStart: null,
+    onOpenEnd: null,
+    onOpenStart: null,
+    opacity: 0.5,
+    outDuration: 250,
+    preventScrolling: true,
+    startingTop: '4%'
+  }}
+  
+  trigger={imageCards[5]}
+>
+  
+{imageCards[5]}
+
+</Modal>
+          </div>
+        </div>
+        <div style={{ marginLeft: "15px" }} className="role">
+          COMPANY PROJECTS (Team work) :
+        </div>
+        <div className="grid-port portfolio-list">
+          <div className="portfolio">
+            <div className="p name" style={{ margin: "10px 0px" }}>
+              POD (MEDICAL ROBOT)
+            </div>
+            <div className="size">
+              &#128073; Github - Live Demo (Not Available){" "}
+            </div>
+            <div className="tech-use">
+              <i className="fas fa-cog"></i>
+              <span>
+                Technologies: Reactjs, Scss, Ant design, Typescript ....
+              </span>
+              
+            </div>
+            <Modal
+  
+
+  
+  id="Modal-0"
+  open={false}
+  options={{
+    dismissible: true,
+    endingTop: '10%',
+    inDuration: 250,
+    onCloseEnd: null,
+    onCloseStart: null,
+    onOpenEnd: null,
+    onOpenStart: null,
+    opacity: 0.5,
+    outDuration: 250,
+    preventScrolling: true,
+    startingTop: '4%'
+  }}
+  
+  trigger={imageCards[7]}
+>
+  
+{imageCards[7]}
+
+</Modal>
+          </div>
+          
+
+          <div className="portfolio">
+            <div className="p name" style={{ margin: "10px 0px" }}>
+              MTC (Music + Video Data Record)
+            </div>
+            <div className="size">
+              &#128073; Github - Live Demo (Not Available){" "}
+            </div>
+
+            <div className="tech-use">
+              <i className="fas fa-cog"></i>
+              <span>
+                Technologies: Reactjs, Scss, Ant design, Typescript...
+              </span>
+            </div>
+            <Modal
+  
+
+  
+  id="Modal-0"
+  open={false}
+  options={{
+    dismissible: true,
+    endingTop: '10%',
+    inDuration: 250,
+    onCloseEnd: null,
+    onCloseStart: null,
+    onOpenEnd: null,
+    onOpenStart: null,
+    opacity: 0.5,
+    outDuration: 250,
+    preventScrolling: true,
+    startingTop: '4%'
+  }}
+  
+  trigger={imageCards[8]}
+>
+  
+{imageCards[8]}
+
+</Modal>
+            
+            
+          </div>
+        </div>
       </div>
-    
-    </div>
-    
-    </div>
     </motion.div>
+    
   );
 };
 

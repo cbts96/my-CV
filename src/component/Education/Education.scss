@@ -1,6 +1,6 @@
 .education-container {
     margin: 0;
-  background-color: black;
+  
   padding: 0 20px;
   color: white;
   height: 60vh;
@@ -12,7 +12,7 @@
   .content {
     margin-bottom:120px;;
     .name{
-      font-size: 30px;
+      font-size: 20px;
       display: flex;
       justify-content: space-between;
   }
@@ -35,9 +35,9 @@
   // @media (max-width: 650px) {
   //   padding-top: 130px;
   // }
-  @media (max-width: 375px) {
+  @media (max-width: 1000px) {
     
-    font-size: 20px;
+    font-size: 35px!important;
     margin-top: 10px;
   }
 }

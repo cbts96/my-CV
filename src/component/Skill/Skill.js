@@ -1,6 +1,6 @@
 import React from "react";
 import "./Skill.scss";
-import {motion} from "framer-motion";
+
 const Skill = () => {
   return (
     

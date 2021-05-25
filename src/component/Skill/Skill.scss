@@ -1,9 +1,9 @@
 .skill-container{
     height: 80vh;
-    background-color: black;
+   
     color: white;
     padding: 0 20px;
-    margin-top: 235px;
+    margin-top: 255px;
     
     @media (max-width: 375px) {
         margin: 20px 0 ;
@@ -20,6 +20,10 @@
         font-size: 180px;
         @media (max-width: 1450px) {
             font-size: 100px;
+
+        }
+        @media (max-width: 555px) {
+            font-size: 60px;
 
         }
         

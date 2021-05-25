@@ -15,9 +15,9 @@ const Hobbies = () => {
                 <h1 className="h1 hobbies">Hobbies</h1>
                 <span>I enjoy a lot of my free time to:
                     <ul>
-                        <li>Watch Movies</li>
-                        <li>Listen to music</li>
-                        <li>Play computer game</li>
+                        <li>- Watch Movies</li>
+                        <li>- Listen to music</li>
+                        <li>- Play computer game</li>
                         
                     </ul>
                 </span>

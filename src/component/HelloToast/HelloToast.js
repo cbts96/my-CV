@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 function HelloToast() {
   const notify = () =>
-    toast("❤️ Hello Sir / Madam, Wellcome to my CV. ❤️", {
+    toast("❤️ Hello Sir!! Welcome to my CV. ❤️", {
       position: "top-right",
       autoClose: 5000,
       hideProgressBar: false,

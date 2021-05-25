@@ -3,26 +3,27 @@ import About from "../About/About";
 import Certifiactes from "../Certificates/Certifiactes";
 import Contact from "../Hobbies/Hobbies";
 import Education from "../Education/Education";
+// import { useMediaQuery } from 'react-responsive';
 import End from "../End/End";
 
 import Portfolio from "../Portfolio/Portfolio";
-import ScrollTop from "../ScrollTotTop/ScrollTop";
+// // import ScrollTop from "../ScrollTotTop/ScrollTop";
 import Skill from "../Skill/Skill";
 import Ex from "../Experience/Ex";
 import "./MainPage.scss";
 const MainPage = () => {
-
+  
   return (
     <div className="main-page">
-      <ScrollTop />
+      
       <About  />
-      <Education />
+       <Education />
       <Ex />
       <Skill />
       <Portfolio />
-      <Contact />
+       <Contact />
       <Certifiactes />
-      <End/>
+      <End/>    
     </div>
   );
 };
