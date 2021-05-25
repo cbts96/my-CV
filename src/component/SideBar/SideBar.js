@@ -6,6 +6,7 @@ import 'materialize-css';
 import { SideNav, Button, SideNavItem } from 'react-materialize';
 import {Link} from "react-scroll";
 import "./SideBar.scss"
+import C360 from "../../assets/C360.jpg"
 const SideBar = ({showButton}) => {
   // const isDesktopOrLaptop = useMediaQuery({
   //   query: '(min-device-width: 1224px)'
@@ -33,7 +34,7 @@ const SideBar = ({showButton}) => {
       user={{
         background: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxCEvFAEe3ziBvRL7ID-IijbniFupiKJS_nA&usqp=CAU',
         email: 'lexuanthang123@gmail.com',
-        image: '../../assets/C360.jpg',
+        image: "https://i0.wp.com/s1.uphinh.org/2021/05/26/C360.jpg",
         name: 'Lê Xuân Thắng'
       }}
       userView
