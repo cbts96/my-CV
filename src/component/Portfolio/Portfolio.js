@@ -16,7 +16,7 @@ import { Modal} from 'react-materialize';
 // import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 const Portfolio = () => {
-  const [ setImageToShow] = useState("");
+  const [imageToShow,setImageToShow] = useState("");
   const [setLightBoxDisplay] = useState(false);
   const images = [a1, a2, a3, a4, a5, a6, a7, a8, a9];
   
@@ -36,16 +36,16 @@ const Portfolio = () => {
 
   //hide lightbox
   //show next image in lightbox
-  // const showNext = (e) => {
-  //   e.stopPropagation();
-  //   let currentIndex = images.indexOf(imageToShow);
-  //   if (currentIndex >= images.length - 1) {
-  //     setLightBoxDisplay(false);
-  //   } else {
-  //     let nextImage = images[currentIndex + 1];
-  //     setImageToShow(nextImage);
-  //   }
-  // };
+  const showNext = (e) => {
+    e.stopPropagation();
+    let currentIndex = images.indexOf(imageToShow);
+    if (currentIndex >= images.length - 1) {
+      setLightBoxDisplay(false);
+    } else {
+      let nextImage = images[currentIndex + 1];
+      setImageToShow(nextImage);
+    }
+  };
 
   //show previous image in lightbox
   // const showPrev = (e) => {
