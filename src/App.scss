@@ -61,7 +61,7 @@
     }
   
     &__nav {
-        height: 77vh;
+        height: 90vh;
         position: fixed;
         top: 0;
         left: 0;
@@ -71,7 +71,16 @@
         width: 0;
         transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
-  
+    // @media (max-height:1000px){
+    //     nav{
+    //         color: #fff;
+    //         background-color: #ee6e73;
+    //         width: 100%;
+            
+    //         line-height: 56px; 
+    //     }
+      
+    // }
     &__list {
         position: absolute;
         top: 50%;
