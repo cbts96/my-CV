@@ -70,6 +70,7 @@
        .p.name{
            font-size: 22px;
        }
+       
       .img-portfolio{
         max-width: 460px;
         padding-right: 10px;
@@ -102,7 +103,11 @@
   max-height: 150px !important;
 }
 
+.modal-content .img-portfolio{
+  width: 100%;
+  
 
+}
 
 
 
