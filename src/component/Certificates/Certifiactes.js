@@ -17,7 +17,7 @@ const Certifiactes = () => {
             <h1 className="h1 cer">Certificate</h1>
             <li><a href="https://www.udemy.com/certificate/UC-071dda2a-d129-45fa-a6e5-718dcfb3808d/"><i className="fas fa-download"></i> ReactJs</a></li>
             <li><a href="https://www.udemy.com/certificate/UC-4b5114ab-a474-4988-8dc4-0b20c8499050/"><i className="fas fa-download"></i> NodeJs</a></li>
-            <li><a href="#2"><i className="fas fa-download"></i> Mern Stack</a></li>
+            <li><a href="https://www.udemy.com/certificate/UC-db3c0e43-be85-4b29-9aa2-4db5f2379880/"><i className="fas fa-download"></i> Mern Stack</a></li>
         </div>
         </motion.div>
     )

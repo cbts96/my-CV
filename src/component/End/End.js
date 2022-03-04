@@ -11,7 +11,7 @@ const End = () => {
         profile. Have a nice day!!! (◕‿↼){" "}
       </p>
       <div className="text-center">
-        &copy; 2021 LeThang. All rights reserved
+        &copy; 2022 LeThang. All rights reserved
       </div>
     </div>
     

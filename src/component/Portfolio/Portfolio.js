@@ -9,24 +9,28 @@ import a6 from "../../assets/a6.png";
 import a7 from "../../assets/a7.png";
 import a8 from "../../assets/a8.png";
 import a9 from "../../assets/a9.png";
+import last from "../../assets/last.png";
 // import ReactFancyBox from "react-fancybox";
 // import "react-fancybox/lib/fancybox.css";
 import { motion } from "framer-motion";
-import { Modal} from 'react-materialize';
+import { Modal } from "react-materialize";
 // import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 const Portfolio = () => {
-  const [imageToShow,setImageToShow] = useState("");
+  const [imageToShow, setImageToShow] = useState("");
   const [setLightBoxDisplay] = useState(false);
-  const images = [a1, a2, a3, a4, a5, a6, a7, a8, a9];
-  
+  const images = [a1, a2, a3, a4, a5, a6, a7, a8, a9,last];
+
   //define
   const imageCards = images.map((image) => (
-    
-    <img key={image} alt="img" className="img-portfolio" onClick={() => showImage(image)} src={image} />
+    <img
+      key={image}
+      alt="img"
+      className="img-portfolio"
+      onClick={() => showImage(image)}
+      src={image}
+    />
   ));
-  
-   
 
   //function to show a specific image in the lightbox, amd make lightbox visible
   const showImage = (image) => {
@@ -59,7 +63,6 @@ const Portfolio = () => {
   //   }
   // };
 
-  
   return (
     <motion.div
       initial={{ scale: 0 }}
@@ -100,38 +103,25 @@ const Portfolio = () => {
               <span>Technologies: React, Redux, Firebase, Sagas....</span>
             </div>
             <Modal
-  
-
-  
-  id="Modal-0"
-  open={false}
-  options={{
-    dismissible: true,
-    endingTop: '10%',
-    inDuration: 250,
-    onCloseEnd: null,
-    onCloseStart: null,
-    onOpenEnd: null,
-    onOpenStart: null,
-    opacity: 0.5,
-    outDuration: 250,
-    preventScrolling: true,
-    startingTop: '4%'
-  }}
-  
-  trigger={imageCards[0]}
->
-  
-{imageCards[0]}
-
-</Modal>
-
-
-    
-
-
-
-            
+              id="Modal-0"
+              open={false}
+              options={{
+                dismissible: true,
+                endingTop: "10%",
+                inDuration: 250,
+                onCloseEnd: null,
+                onCloseStart: null,
+                onOpenEnd: null,
+                onOpenStart: null,
+                opacity: 0.5,
+                outDuration: 250,
+                preventScrolling: true,
+                startingTop: "4%",
+              }}
+              trigger={imageCards[0]}
+            >
+              {imageCards[0]}
+            </Modal>
           </div>
           <div className="portfolio">
             <div className="p name">Natour - CSS</div>
@@ -156,34 +146,27 @@ const Portfolio = () => {
               <i className="fas fa-cog"></i>
               <span>Technologies: Html, Css, Javascript....</span>
             </div>
-            
+
             <Modal
-  
-
-  
-  id="Modal-0"
-  open={false}
-  options={{
-    dismissible: true,
-    endingTop: '10%',
-    inDuration: 250,
-    onCloseEnd: null,
-    onCloseStart: null,
-    onOpenEnd: null,
-    onOpenStart: null,
-    opacity: 0.5,
-    outDuration: 250,
-    preventScrolling: true,
-    startingTop: '4%'
-  }}
-  
-  trigger={imageCards[1]}
->
-  
-{imageCards[1]}
-
-</Modal>
-            
+              id="Modal-0"
+              open={false}
+              options={{
+                dismissible: true,
+                endingTop: "10%",
+                inDuration: 250,
+                onCloseEnd: null,
+                onCloseStart: null,
+                onOpenEnd: null,
+                onOpenStart: null,
+                opacity: 0.5,
+                outDuration: 250,
+                preventScrolling: true,
+                startingTop: "4%",
+              }}
+              trigger={imageCards[1]}
+            >
+              {imageCards[1]}
+            </Modal>
           </div>
 
           <div className="portfolio">
@@ -210,32 +193,25 @@ const Portfolio = () => {
               <span>Technologies: Html, Css, Javascript....</span>
             </div>
             <Modal
-  
-
-  
-  id="Modal-0"
-  open={false}
-  options={{
-    dismissible: true,
-    endingTop: '10%',
-    inDuration: 250,
-    onCloseEnd: null,
-    onCloseStart: null,
-    onOpenEnd: null,
-    onOpenStart: null,
-    opacity: 0.5,
-    outDuration: 250,
-    preventScrolling: true,
-    startingTop: '4%'
-  }}
-  
-  trigger={imageCards[2]}
->
-  
-{imageCards[2]}
-
-</Modal>
-            
+              id="Modal-0"
+              open={false}
+              options={{
+                dismissible: true,
+                endingTop: "10%",
+                inDuration: 250,
+                onCloseEnd: null,
+                onCloseStart: null,
+                onOpenEnd: null,
+                onOpenStart: null,
+                opacity: 0.5,
+                outDuration: 250,
+                preventScrolling: true,
+                startingTop: "4%",
+              }}
+              trigger={imageCards[2]}
+            >
+              {imageCards[2]}
+            </Modal>
           </div>
           <div className="portfolio">
             <div className="p name">GreenSock Animation - Javascript</div>
@@ -261,31 +237,25 @@ const Portfolio = () => {
               <span>Technologies: Html, Css, Javascript....</span>
             </div>
             <Modal
-  
-
-  
-  id="Modal-0"
-  open={false}
-  options={{
-    dismissible: true,
-    endingTop: '10%',
-    inDuration: 250,
-    onCloseEnd: null,
-    onCloseStart: null,
-    onOpenEnd: null,
-    onOpenStart: null,
-    opacity: 0.5,
-    outDuration: 250,
-    preventScrolling: true,
-    startingTop: '4%'
-  }}
-  
-  trigger={imageCards[6]}
->
-  
-{imageCards[6]}
-
-</Modal>
+              id="Modal-0"
+              open={false}
+              options={{
+                dismissible: true,
+                endingTop: "10%",
+                inDuration: 250,
+                onCloseEnd: null,
+                onCloseStart: null,
+                onOpenEnd: null,
+                onOpenStart: null,
+                opacity: 0.5,
+                outDuration: 250,
+                preventScrolling: true,
+                startingTop: "4%",
+              }}
+              trigger={imageCards[6]}
+            >
+              {imageCards[6]}
+            </Modal>
           </div>
           <div className="portfolio">
             <div className="p name">Natour - NodeJS</div>
@@ -311,32 +281,25 @@ const Portfolio = () => {
               <span>Technologies: Nodejs, MongoDB, Express,.....</span>
             </div>
             <Modal
-  
-
-  
-  id="Modal-0"
-  open={false}
-  options={{
-    dismissible: true,
-    endingTop: '10%',
-    inDuration: 250,
-    onCloseEnd: null,
-    onCloseStart: null,
-    onOpenEnd: null,
-    onOpenStart: null,
-    opacity: 0.5,
-    outDuration: 250,
-    preventScrolling: true,
-    startingTop: '4%'
-  }}
-  
-  trigger={imageCards[3]}
->
-  
-{imageCards[3]}
-
-</Modal>
-            
+              id="Modal-0"
+              open={false}
+              options={{
+                dismissible: true,
+                endingTop: "10%",
+                inDuration: 250,
+                onCloseEnd: null,
+                onCloseStart: null,
+                onOpenEnd: null,
+                onOpenStart: null,
+                opacity: 0.5,
+                outDuration: 250,
+                preventScrolling: true,
+                startingTop: "4%",
+              }}
+              trigger={imageCards[3]}
+            >
+              {imageCards[3]}
+            </Modal>
           </div>
           <div className="portfolio">
             <div className="p name">Basic-Chat-App - Nodejs</div>
@@ -356,32 +319,25 @@ const Portfolio = () => {
               <span>Technologies: Nodejs, ReactJS, Socket IO....</span>
             </div>
             <Modal
-  
-
-  
-  id="Modal-0"
-  open={false}
-  options={{
-    dismissible: true,
-    endingTop: '10%',
-    inDuration: 250,
-    onCloseEnd: null,
-    onCloseStart: null,
-    onOpenEnd: null,
-    onOpenStart: null,
-    opacity: 0.5,
-    outDuration: 250,
-    preventScrolling: true,
-    startingTop: '4%'
-  }}
-  
-  trigger={imageCards[4]}
->
-  
-{imageCards[4]}
-
-</Modal>
-          
+              id="Modal-0"
+              open={false}
+              options={{
+                dismissible: true,
+                endingTop: "10%",
+                inDuration: 250,
+                onCloseEnd: null,
+                onCloseStart: null,
+                onOpenEnd: null,
+                onOpenStart: null,
+                opacity: 0.5,
+                outDuration: 250,
+                preventScrolling: true,
+                startingTop: "4%",
+              }}
+              trigger={imageCards[4]}
+            >
+              {imageCards[4]}
+            </Modal>
           </div>
           <div className="portfolio">
             <div className="p name">Todo-List - Reactjs</div>
@@ -407,31 +363,25 @@ const Portfolio = () => {
               <span>Technologies: Html, Css, Javascript....</span>
             </div>
             <Modal
-  
-
-  
-  id="Modal-0"
-  open={false}
-  options={{
-    dismissible: true,
-    endingTop: '10%',
-    inDuration: 250,
-    onCloseEnd: null,
-    onCloseStart: null,
-    onOpenEnd: null,
-    onOpenStart: null,
-    opacity: 0.5,
-    outDuration: 250,
-    preventScrolling: true,
-    startingTop: '4%'
-  }}
-  
-  trigger={imageCards[5]}
->
-  
-{imageCards[5]}
-
-</Modal>
+              id="Modal-0"
+              open={false}
+              options={{
+                dismissible: true,
+                endingTop: "10%",
+                inDuration: 250,
+                onCloseEnd: null,
+                onCloseStart: null,
+                onOpenEnd: null,
+                onOpenStart: null,
+                opacity: 0.5,
+                outDuration: 250,
+                preventScrolling: true,
+                startingTop: "4%",
+              }}
+              trigger={imageCards[5]}
+            >
+              {imageCards[5]}
+            </Modal>
           </div>
         </div>
         <div style={{ marginLeft: "15px" }} className="role">
@@ -450,36 +400,28 @@ const Portfolio = () => {
               <span>
                 Technologies: Reactjs, Scss, Ant design, Typescript ....
               </span>
-              
             </div>
             <Modal
-  
-
-  
-  id="Modal-0"
-  open={false}
-  options={{
-    dismissible: true,
-    endingTop: '10%',
-    inDuration: 250,
-    onCloseEnd: null,
-    onCloseStart: null,
-    onOpenEnd: null,
-    onOpenStart: null,
-    opacity: 0.5,
-    outDuration: 250,
-    preventScrolling: true,
-    startingTop: '4%'
-  }}
-  
-  trigger={imageCards[7]}
->
-  
-{imageCards[7]}
-
-</Modal>
+              id="Modal-0"
+              open={false}
+              options={{
+                dismissible: true,
+                endingTop: "10%",
+                inDuration: 250,
+                onCloseEnd: null,
+                onCloseStart: null,
+                onOpenEnd: null,
+                onOpenStart: null,
+                opacity: 0.5,
+                outDuration: 250,
+                preventScrolling: true,
+                startingTop: "4%",
+              }}
+              trigger={imageCards[7]}
+            >
+              {imageCards[7]}
+            </Modal>
           </div>
-          
 
           <div className="portfolio">
             <div className="p name" style={{ margin: "10px 0px" }}>
@@ -496,38 +438,64 @@ const Portfolio = () => {
               </span>
             </div>
             <Modal
-  
+              id="Modal-0"
+              open={false}
+              options={{
+                dismissible: true,
+                endingTop: "10%",
+                inDuration: 250,
+                onCloseEnd: null,
+                onCloseStart: null,
+                onOpenEnd: null,
+                onOpenStart: null,
+                opacity: 0.5,
+                outDuration: 250,
+                preventScrolling: true,
+                startingTop: "4%",
+              }}
+              trigger={imageCards[8]}
+            >
+              {imageCards[8]}
+            </Modal>
+          </div>
+          <div className="portfolio">
+            <div className="p name" style={{ margin: "10px 0px" }}>
+              Social network
+            </div>
+            <div className="size">
+              &#128073; Github - Live Demo (Not Available){" "}
+            </div>
 
-  
-  id="Modal-0"
-  open={false}
-  options={{
-    dismissible: true,
-    endingTop: '10%',
-    inDuration: 250,
-    onCloseEnd: null,
-    onCloseStart: null,
-    onOpenEnd: null,
-    onOpenStart: null,
-    opacity: 0.5,
-    outDuration: 250,
-    preventScrolling: true,
-    startingTop: '4%'
-  }}
-  
-  trigger={imageCards[8]}
->
-  
-{imageCards[8]}
-
-</Modal>
-            
-            
+            <div className="tech-use">
+              <i className="fas fa-cog"></i>
+              <span>
+                Technologies: Reactjs, Scss, Ant design, Typescript...
+              </span>
+            </div>
+            <Modal
+              id="Modal-0"
+              open={false}
+              options={{
+                dismissible: true,
+                endingTop: "10%",
+                inDuration: 250,
+                onCloseEnd: null,
+                onCloseStart: null,
+                onOpenEnd: null,
+                onOpenStart: null,
+                opacity: 0.5,
+                outDuration: 250,
+                preventScrolling: true,
+                startingTop: "4%",
+              }}
+              trigger={imageCards[9]}
+            >
+              {imageCards[9]}
+            </Modal>
           </div>
         </div>
       </div>
     </motion.div>
-    
   );
 };
 
