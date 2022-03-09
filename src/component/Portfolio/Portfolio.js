@@ -469,7 +469,7 @@ const Portfolio = () => {
             <div className="tech-use">
               <i className="fas fa-cog"></i>
               <span>
-                Technologies: Reactjs, Scss, Ant design, Typescript...
+                Technologies: Reactjs, Nodejs, Scss, Ant design, Typescript...
               </span>
             </div>
             <Modal
