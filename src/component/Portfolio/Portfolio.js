@@ -9,6 +9,7 @@ import a6 from "../../assets/a6.png";
 import a7 from "../../assets/a7.png";
 import a8 from "../../assets/a8.png";
 import a9 from "../../assets/a9.png";
+import a10 from "../../assets/a10.png";
 import last from "../../assets/last.png";
 // import ReactFancyBox from "react-fancybox";
 // import "react-fancybox/lib/fancybox.css";
@@ -19,7 +20,7 @@ import "react-image-lightbox/style.css";
 const Portfolio = () => {
   const [imageToShow, setImageToShow] = useState("");
   const [setLightBoxDisplay] = useState(false);
-  const images = [a1, a2, a3, a4, a5, a6, a7, a8, a9,last];
+  const images = [a1, a2, a3, a4, a5, a6, a7, a8, a9,a10,last];
 
   //define
   const imageCards = images.map((image) => (
@@ -301,22 +302,23 @@ const Portfolio = () => {
               {imageCards[3]}
             </Modal>
           </div>
+         
           <div className="portfolio">
-            <div className="p name">Basic-Chat-App - Nodejs</div>
+            <div className="p name">FilmTicket</div>
             <div className="git">
               &#128073;
-              <a href="#1" className="git-blue">
+              <a
+                href="https://github.com/cbts96/Film-ticket"
+                className="git-blue"
+              >
                 Github
               </a>{" "}
               -
-              <a href="#1" className="git-blue">
-                {" "}
-                Live Demo
-              </a>
+              Not Available
             </div>
             <div className="tech-use">
               <i className="fas fa-cog"></i>
-              <span>Technologies: Nodejs, ReactJS, Socket IO....</span>
+              <span>Technologies: Reactjs,Redux, AntD,.....</span>
             </div>
             <Modal
               id="Modal-0"
@@ -334,55 +336,13 @@ const Portfolio = () => {
                 preventScrolling: true,
                 startingTop: "4%",
               }}
-              trigger={imageCards[4]}
+              trigger={imageCards[9]}
             >
-              {imageCards[4]}
+              {imageCards[9]}
             </Modal>
           </div>
-          <div className="portfolio">
-            <div className="p name">Todo-List - Reactjs</div>
-            <div className="git">
-              &#128073;
-              <a
-                href="https://github.com/cbts96/TodolistReact"
-                className="git-blue"
-              >
-                Github
-              </a>{" "}
-              -
-              <a
-                href="https://todolist-react-lethang.netlify.app/"
-                className="git-blue"
-              >
-                {" "}
-                Live Demo
-              </a>
-            </div>
-            <div className="tech-use">
-              <i className="fas fa-cog"></i>
-              <span>Technologies: Html, Css, Javascript....</span>
-            </div>
-            <Modal
-              id="Modal-0"
-              open={false}
-              options={{
-                dismissible: true,
-                endingTop: "10%",
-                inDuration: 250,
-                onCloseEnd: null,
-                onCloseStart: null,
-                onOpenEnd: null,
-                onOpenStart: null,
-                opacity: 0.5,
-                outDuration: 250,
-                preventScrolling: true,
-                startingTop: "4%",
-              }}
-              trigger={imageCards[5]}
-            >
-              {imageCards[5]}
-            </Modal>
-          </div>
+         
+    
         </div>
         <div style={{ marginLeft: "15px" }} className="role">
           COMPANY PROJECTS (Team work) :
@@ -488,9 +448,9 @@ const Portfolio = () => {
                 preventScrolling: true,
                 startingTop: "4%",
               }}
-              trigger={imageCards[9]}
+              trigger={imageCards[10]}
             >
-              {imageCards[9]}
+              {imageCards[10]}
             </Modal>
           </div>
         </div>
