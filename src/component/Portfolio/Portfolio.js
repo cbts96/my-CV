@@ -304,7 +304,7 @@ const Portfolio = () => {
           </div>
          
           <div className="portfolio">
-            <div className="p name">FilmTicket</div>
+            <div className="p name">FilmTicket-Reactjs</div>
             <div className="git">
               &#128073;
               <a
