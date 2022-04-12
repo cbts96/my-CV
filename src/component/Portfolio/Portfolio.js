@@ -10,6 +10,7 @@ import a7 from "../../assets/a7.png";
 import a8 from "../../assets/a8.png";
 import a9 from "../../assets/a9.png";
 import a10 from "../../assets/a10.png";
+import a11 from "../../assets/a11.png";
 import last from "../../assets/last.png";
 // import ReactFancyBox from "react-fancybox";
 // import "react-fancybox/lib/fancybox.css";
@@ -20,7 +21,7 @@ import "react-image-lightbox/style.css";
 const Portfolio = () => {
   const [imageToShow, setImageToShow] = useState("");
   const [setLightBoxDisplay] = useState(false);
-  const images = [a1, a2, a3, a4, a5, a6, a7, a8, a9,a10,last];
+  const images = [a1, a2, a3, a4, a5, a6, a7, a8, a9,a10,a11,last];
 
   //define
   const imageCards = images.map((image) => (
@@ -341,6 +342,49 @@ const Portfolio = () => {
               {imageCards[9]}
             </Modal>
           </div>
+          <div className="portfolio">
+            <div className="p name">Massive-Ecommerce-MERNSTACK</div>
+            <div className="git">
+              &#128073;
+              <a
+                href="https://github.com/cbts96/Massive-mern-master"
+                className="git-blue"
+              >
+                Github
+              </a>{" "}
+              -
+              <a
+                href="https://massive-mern-lethang.herokuapp.com/"
+                className="git-blue"
+              >
+                Live Demo
+              </a>{" "}
+            </div>
+            <div className="tech-use">
+              <i className="fas fa-cog"></i>
+              <span>Technologies: Nodejs,Reactjs,Redux, AntD,.....</span>
+            </div>
+            <Modal
+              id="Modal-0"
+              open={false}
+              options={{
+                dismissible: true,
+                endingTop: "10%",
+                inDuration: 250,
+                onCloseEnd: null,
+                onCloseStart: null,
+                onOpenEnd: null,
+                onOpenStart: null,
+                opacity: 0.5,
+                outDuration: 250,
+                preventScrolling: true,
+                startingTop: "4%",
+              }}
+              trigger={imageCards[10]}
+            >
+              {imageCards[10]}
+            </Modal>
+          </div>
          
     
         </div>
@@ -448,9 +492,9 @@ const Portfolio = () => {
                 preventScrolling: true,
                 startingTop: "4%",
               }}
-              trigger={imageCards[10]}
+              trigger={imageCards[11]}
             >
-              {imageCards[10]}
+              {imageCards[11]}
             </Modal>
           </div>
         </div>
