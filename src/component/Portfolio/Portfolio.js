@@ -91,14 +91,8 @@ const Portfolio = () => {
               >
                 Github
               </a>{" "}
-              -
-              <a
-                href="https://crown-clothing-v3.herokuapp.com/"
-                className="git-blue"
-              >
-                {" "}
-                Live Demo
-              </a>
+              
+             
             </div>
             <div className="tech-use">
               <i className="fas fa-cog"></i>
@@ -135,14 +129,7 @@ const Portfolio = () => {
               >
                 Github
               </a>{" "}
-              -
-              <a
-                href="https://natour-html-css-by-lethang.netlify.app/"
-                className="git-blue"
-              >
-                {" "}
-                Live Demo
-              </a>
+           
             </div>
             <div className="tech-use">
               <i className="fas fa-cog"></i>
@@ -181,14 +168,7 @@ const Portfolio = () => {
               >
                 Github
               </a>{" "}
-              -
-              <a
-                href="https://comfy-store-lethang.netlify.app/"
-                className="git-blue"
-              >
-                {" "}
-                Live Demo
-              </a>
+             
             </div>
             <div className="tech-use">
               <i className="fas fa-cog"></i>
@@ -225,14 +205,7 @@ const Portfolio = () => {
               >
                 Github
               </a>{" "}
-              -
-              <a
-                href="https://greensock-ex-by-lethang.netlify.app/"
-                className="git-blue"
-              >
-                {" "}
-                Live Demo
-              </a>
+              
             </div>
             <div className="tech-use">
               <i className="fas fa-cog"></i>
@@ -269,14 +242,7 @@ const Portfolio = () => {
               >
                 Github
               </a>{" "}
-              -
-              <a
-                href="https://natour-lethang.herokuapp.com/"
-                className="git-blue"
-              >
-                {" "}
-                Live Demo
-              </a>
+             
             </div>
             <div className="tech-use">
               <i className="fas fa-cog"></i>
@@ -352,13 +318,7 @@ const Portfolio = () => {
               >
                 Github
               </a>{" "}
-              -
-              <a
-                href="https://massive-mern-lethang.herokuapp.com/"
-                className="git-blue"
-              >
-                Live Demo
-              </a>{" "}
+         
             </div>
             <div className="tech-use">
               <i className="fas fa-cog"></i>
@@ -499,6 +459,8 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
+     <p  className="add-color">And some another iam still building now!!!!! <a href="https://github.com/cbts96">See more</a></p>
+      
     </motion.div>
   );
 };
